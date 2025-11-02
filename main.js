@@ -136,62 +136,34 @@ faqQuestions.forEach(question => {
 // TESTIMONIALS SLIDER
 // ===========================
 const testimonialCards = document.querySelectorAll('.testimonial-card');
-const sliderDotsContainer = document.getElementById('sliderDots');
 let currentSlide = 0;
 
-// Create dots for slider (only on mobile)
-function createSliderDots() {
-    if (window.innerWidth <= 768) {
-        sliderDotsContainer.innerHTML = '';
-        testimonialCards.forEach((_, index) => {
-            const dot = document.createElement('span');
-            dot.classList.add('slider-dot');
-            if (index === 0) dot.classList.add('active');
-            dot.addEventListener('click', () => goToSlide(index));
-            sliderDotsContainer.appendChild(dot);
-        });
-    }
-}
-
-function goToSlide(index) {
-    if (window.innerWidth <= 768) {
-        currentSlide = index;
-        
+// Show single testimonial on mobile
+function showSingleTestimonial() {
+    if (window.innerWidth <= 768 && testimonialCards.length > 0) {
         testimonialCards.forEach((card, i) => {
-            card.style.display = i === index ? 'block' : 'none';
+            card.style.display = i === currentSlide ? 'block' : 'none';
         });
-        
-        const dots = document.querySelectorAll('.slider-dot');
-        dots.forEach((dot, i) => {
-            dot.classList.toggle('active', i === index);
-        });
-    }
-}
-
-// Auto-slide testimonials on mobile
-function autoSlide() {
-    if (window.innerWidth <= 768) {
-        currentSlide = (currentSlide + 1) % testimonialCards.length;
-        goToSlide(currentSlide);
-    }
-}
-
-// Initialize slider
-createSliderDots();
-if (window.innerWidth <= 768) {
-    goToSlide(0);
-    setInterval(autoSlide, 5000);
-}
-
-// Recreate dots on window resize
-window.addEventListener('resize', () => {
-    createSliderDots();
-    if (window.innerWidth > 768) {
-        testimonialCards.forEach(card => card.style.display = 'block');
     } else {
-        goToSlide(currentSlide);
+        testimonialCards.forEach(card => card.style.display = 'block');
     }
-});
+}
+
+// Auto-rotate testimonials on mobile
+function autoRotateTestimonials() {
+    if (window.innerWidth <= 768 && testimonialCards.length > 0) {
+        currentSlide = (currentSlide + 1) % testimonialCards.length;
+        showSingleTestimonial();
+    }
+}
+
+// Initialize
+if (testimonialCards.length > 0) {
+    showSingleTestimonial();
+    setInterval(autoRotateTestimonials, 5000);
+    
+    window.addEventListener('resize', showSingleTestimonial);
+}
 
 // ===========================
 // SEATS AVAILABILITY
@@ -313,7 +285,7 @@ const observerOptions = {
     rootMargin: '0px 0px -50px 0px'
 };
 
-const fadeInElements = document.querySelectorAll('.benefit-card, .audience-card, .testimonial-card, .timeline-item');
+const fadeInElements = document.querySelectorAll('.benefit-card, .audience-card, .method-card');
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
