@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curso de Modelamiento y Análisis de Recursos Hídricos con AutoCAD, Civil 3D y QGIS. 36 horas certificadas - Inicio 29 de Noviembre 2025">
+    <meta name="keywords" content="AutoCAD, Civil 3D, QGIS, recursos hídricos, ingeniería hidráulica, curso online">
+    <title>Modelamiento de Recursos Hídricos | AutoCAD, Civil 3D y QGIS - IntISMART</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="https://intismart.com/wp-content/uploads/2024/03/cropped-Logo-Intismart-1.png" alt="IntISMART Logo">
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#beneficios" class="nav-link">Beneficios</a></li>
+                <li><a href="#modulos" class="nav-link">Módulos</a></li>
+                <li><a href="#instructor" class="nav-link">Instructor</a></li>
+                <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <a href="https://wa.me/51972201556?text=Hola,%20vengo%20de%20la%20web,%20me%20gustó%20y%20quiero%20adquirir%20el%20curso" class="btn btn-primary btn-nav" target="_blank">Inscríbete Ahora</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Domina el Modelamiento y Análisis de Recursos Hídricos</h1>
+                <p class="hero-subtitle">Aprende AutoCAD, Civil 3D y QGIS aplicados a proyectos hidráulicos reales. 36 horas certificadas en 12 sesiones intensivas.</p>
+                
+                <div class="hero-badges">
+                    <span class="badge"><i class="fas fa-graduation-cap"></i> Certificado Oficial</span>
+                    <span class="badge"><i class="fas fa-video"></i> Grabaciones Incluidas</span>
+                    <span class="badge"><i class="fas fa-folder-open"></i> Material del Curso</span>
+                    <span class="badge"><i class="fas fa-trophy"></i> Proyecto Final</span>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="https://wa.me/51972201556?text=Hola,%20vengo%20de%20la%20web,%20me%20gustó%20y%20quiero%20adquirir%20el%20curso" class="btn btn-large btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Reserva tu Cupo - S/ 150
+                    </a>
+                    <p class="hero-date"><i class="far fa-calendar-alt"></i> Inicio: 29 de Noviembre 2025</p>
+                </div>
+
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="days">00</span>
+                        <span class="countdown-label">Días</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="hours">00</span>
+                        <span class="countdown-label">Horas</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="minutes">00</span>
+                        <span class="countdown-label">Minutos</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="seconds">00</span>
+                        <span class="countdown-label">Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios Section -->
+    <section id="beneficios" class="benefits">
+        <div class="container">
+            <h2 class="section-title">Impulsa tu Carrera Profesional en Ingeniería Hidráulica</h2>
+            <p class="section-subtitle">Aprende las herramientas más demandadas del sector</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Herramientas Profesionales</h3>
+                    <p>Domina los 3 software más demandados en el sector de recursos hídricos: AutoCAD, Civil 3D y QGIS.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Aplicación Real</h3>
+                    <p>Proyectos prácticos en cada sesión: diseño de redes, canales de riego, análisis de cuencas y más.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certificación Avalada</h3>
+                    <p>Respaldo de IntISMART y círculos de investigación de la Universidad Nacional Agraria La Molina.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Flexibilidad Total</h3>
+                    <p>Modalidad virtual con grabaciones disponibles 24/7 para que aprendas a tu propio ritmo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Público Objetivo Section -->
+    <section class="target-audience">
+        <div class="container">
+            <h2 class="section-title">Diseñado para Profesionales como Tú</h2>
+            <p class="section-subtitle">Este curso es ideal para:</p>
+            
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <i class="fas fa-user-graduate"></i>
+                    <h4>Estudiantes de Ingeniería</h4>
+                    <p>Civil, Ambiental, Agrícola y Agronomía</p>
+                </div>
+                
+                <div class="audience-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h4>Egresados</h4>
+                    <p>Que buscan especialización técnica</p>
+                </div>
+                
+                <div class="audience-card">
+                    <i class="fas fa-leaf"></i>
+                    <h4>Ingenieros Agrónomos</h4>
+                    <p>Y profesionales ambientalistas</p>
+                </div>
+                
+                <div class="audience-card">
+                    <i class="fas fa-tint"></i>
+                    <h4>Especialistas en Recursos Hídricos</h4>
+                    <p>Profesionales en agua y saneamiento</p>
+                </div>
+                
+                <div class="audience-card">
+                    <i class="fas fa-building"></i>
+                    <h4>Técnicos de Entidades Públicas</h4>
+                    <p>ANA, gobiernos regionales y locales</p>
+                </div>
+                
+                <div class="audience-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h4>Consultores Independientes</h4>
+                    <p>En proyectos hidráulicos y ambientales</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Módulos Section -->
+    <section id="modulos" class="modules">
+        <div class="container">
+            <h2 class="section-title">12 Sesiones Intensivas - 3 Módulos Especializados</h2>
+            <p class="section-subtitle">Programa completo con práctica en cada sesión</p>
+            
+            <div class="tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="modulo1">
+                        <i class="fas fa-drafting-compass"></i>
+                        Módulo 1: AutoCAD
+                    </button>
+                    <button class="tab-button" data-tab="modulo2">
+                        <i class="fas fa-mountain"></i>
+                        Módulo 2: Civil 3D
+                    </button>
+                    <button class="tab-button" data-tab="modulo3">
+                        <i class="fas fa-map-marked-alt"></i>
+                        Módulo 3: QGIS
+                    </button>
+                </div>
+                
+                <!-- Módulo 1: AutoCAD -->
+                <div class="tab-content active" id="modulo1">
+                    <div class="module-header">
+                        <h3><i class="fas fa-drafting-compass"></i> MÓDULO I: AutoCAD - 3 Sesiones</h3>
+                        <p>Fundamentos aplicados a proyectos hidráulicos</p>
+                    </div>
+                    
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span><strong>Sesión 1:</strong> Fundamentos de AutoCAD Aplicado a Hidráulica</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Configuración del entorno de trabajo para proyectos hidráulicos</li>
+                                    <li><i class="fas fa-check"></i> Comandos esenciales de dibujo y edición 2D</li>
+                                    <li><i class="fas fa-check"></i> Manejo de capas, estilos y plantillas especializadas</li>
+                                    <li><i class="fas fa-check"></i> Creación de bloques para elementos hidráulicos</li>
+                                    <li class="practice"><i class="fas fa-laptop-code"></i> <strong>Práctica:</strong> Dibujo de componentes básicos de sistemas hidráulicos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span><strong>Sesión 2:</strong> Diseño de Redes de Distribución de Agua</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Simbología hidráulica normalizada</li>
+                                    <li><i class="fas fa-check"></i> Diseño de redes de agua potable y alcantarillado</li>
+                                    <li><i class="fas fa-check"></i> Representación de válvulas, accesorios y estructuras</li>
+                                    <li><i class="fas fa-check"></i> Acotación y etiquetado especializado</li>
+                                    <li class="practice"><i class="fas fa-laptop-code"></i> <strong>Práctica:</strong> Plano completo de red de distribución</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span><strong>Sesión 3:</strong> Perfiles Longitudinales y Secciones Transversales</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Generación de perfiles longitudinales de conducción</li>
+                                    <li><i class="fas fa-check"></i> Secciones transversales de canales y tuberías</li>
+                                    <li><i class="fas fa-check"></i> Cálculo de pendientes y rasantes</li>
+                                    <li><i class="fas fa-check"></i> Presentación profesional de planos hidráulicos</li>
+                                    <li class="practice"><i class="fas fa-laptop-code"></i> <strong>Práctica:</strong> Perfil longitudinal de línea de conducción</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Módulo 2: Civil 3D -->
+                <div class="tab-content" id="modulo2">
+                    <div class="module-header">
+                        <h3><i class="fas fa-mountain"></i> MÓDULO II: Civil 3D - 5 Sesiones</h3>
+                        <p>Modelamiento avanzado de terrenos y sistemas hidráulicos</p>
+                    </div>
+                    
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span><strong>Sesión 4:</strong> Introducción a Civil 3D y Modelamiento de Superficies</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Interface y configuración para proyectos hidráulicos</li>
+                                    <li><i class="fas fa-check"></i> Importación de puntos topográficos y datos externos</li>
+                                    <li><i class="fas fa-check"></i> Creación y edición de superficies TIN</li>
+                                    <li><i class="fas fa-check"></i> Análisis de elevaciones, pendientes y orientaciones</li>
+                                    <li class="practice"><i class="fas fa-laptop-code"></i> <strong>Práctica:</strong> Modelado de terreno para proyecto hidráulico</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span><strong>Sesión 5:</strong> Alineamientos y Perfiles para Canales</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Diseño de alineamientos horizontales</li>
+                                    <li><i class="fas fa-check"></i> Generación automática de perfiles del terreno</li>
+                                    <li><i class="fas fa-check"></i> Diseño de rasantes y perfiles de proyecto</li>
+                                    <li><i class="fas fa-check"></i> Criterios de diseño para canales abiertos</li>
+                                    <li class="practice"><i class="fas fa-laptop-code"></i> <strong>Práctica:</strong> Diseño completo de canal de riego</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span><strong>Sesión 6:</strong> Secciones Transversales y Cálculo de Volúmenes</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Generación de secciones transversales típicas</li>
+                                    <li><i class="fas fa-check"></i> Diseño de secciones de canales (trapezoidal, rectangular)</li>
+                                    <li><i class="fas fa-check"></i> Cálculo de volúmenes de corte y relleno</li>
+                                    <li><i class="fas fa-check"></i> Tablas de movimiento de tierras</li>
+                                    <li class="practice"><i class="fas fa-laptop-code"></i> <strong>Práctica:</strong> Cuantificación de excavaciones para canal</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span><strong>Sesión 7:</strong> Modelado de Redes de Tuberías</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Configuración de catálogos de tuberías y estructuras</li>
+                                    <li><i class="fas fa-check"></i> Diseño de redes por gravedad y presión</li>
+                                    <li><i class="fas fa-check"></i> Análisis de interferencias y cruces</li>
+                                    <li><i class="fas fa-check"></i> Generación de tablas y reportes hidráulicos</li>
+                                    <li class="practice"><i class="fas fa-laptop-code"></i> <strong>Práctica:</strong> Red de alcantarillado pluvial</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span><strong>Sesión 8:</strong> Análisis de Cuencas y Escorrentía</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Delimitación automática de cuencas</li>
+                                    <li><i class="fas fa-check"></i> Análisis de flujo y acumulación</li>
+                                    <li><i class="fas fa-check"></i> Cálculo de tiempos de concentración</li>
+                                    <li><i class="fas fa-check"></i> Integración con análisis hidrológico</li>
+                                    <li class="practice"><i class="fas fa-laptop-code"></i> <strong>Práctica:</strong> Estudio hidrológico de microcuenca</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Módulo 3: QGIS -->
+                <div class="tab-content" id="modulo3">
+                    <div class="module-header">
+                        <h3><i class="fas fa-map-marked-alt"></i> MÓDULO III: QGIS - 4 Sesiones</h3>
+                        <p>Sistemas de Información Geográfica aplicados a recursos hídricos</p>
+                    </div>
+                    
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span><strong>Sesión 9:</strong> Fundamentos de QGIS y Gestión de Datos</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Interface y herramientas básicas de QGIS</li>
+                                    <li><i class="fas fa-check"></i> Sistemas de coordenadas para proyectos hidráulicos</li>
+                                    <li><i class="fas fa-check"></i> Importación de datos CAD y ráster</li>
+                                    <li><i class="fas fa-check"></i> Gestión de capas vectoriales y ráster</li>
+                                    <li class="practice"><i class="fas fa-laptop-code"></i> <strong>Práctica:</strong> Preparación de proyecto SIG hídrico</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span><strong>Sesión 10:</strong> Análisis Digital del Terreno y Cuencas</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Procesamiento de modelos digitales de elevación (DEM)</li>
+                                    <li><i class="fas fa-check"></i> Delimitación automática de cuencas hidrográficas</li>
+                                    <li><i class="fas fa-check"></i> Extracción de redes de drenaje</li>
+                                    <li><i class="fas fa-check"></i> Parámetros morfométricos de cuencas</li>
+                                    <li class="practice"><i class="fas fa-laptop-code"></i> <strong>Práctica:</strong> Caracterización completa de cuenca</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span><strong>Sesión 11:</strong> Mapas Temáticos y Análisis Espacial</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Creación de mapas de riesgo de inundación</li>
+                                    <li><i class="fas fa-check"></i> Análisis de cobertura y uso del suelo</li>
+                                    <li><i class="fas fa-check"></i> Interpolación de datos hidrológicos</li>
+                                    <li><i class="fas fa-check"></i> Simbología especializada para recursos hídricos</li>
+                                    <li class="practice"><i class="fas fa-laptop-code"></i> <strong>Práctica:</strong> Atlas temático de recursos hídricos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span><strong>Sesión 12:</strong> Proyecto Integrador Final</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Integración de datos AutoCAD-Civil 3D-QGIS</li>
+                                    <li><i class="fas fa-check"></i> Desarrollo de proyecto grupal completo</li>
+                                    <li><i class="fas fa-check"></i> Flujo de trabajo profesional BIM-GIS</li>
+                                    <li><i class="fas fa-check"></i> Presentación de resultados y entregables</li>
+                                    <li class="practice highlight"><i class="fas fa-trophy"></i> <strong>Evaluación:</strong> Sustentación de proyectos grupales</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metodología Section -->
+    <section class="methodology">
+        <div class="container">
+            <h2 class="section-title">Aprende Haciendo - Metodología Práctica</h2>
+            <p class="section-subtitle">Nuestro proceso de aprendizaje paso a paso</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Clase en Vivo</h4>
+                        <p>Sesiones interactivas vía Zoom los sábados y domingos de 9am a 11am</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Ejercicio Guiado</h4>
+                        <p>Desarrollo paso a paso de casos prácticos con el instructor</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Proyecto Práctico</h4>
+                        <p>Trabajo individual aplicando los conocimientos adquiridos</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Grabación 24/7</h4>
+                        <p>Acceso ilimitado a todas las clases grabadas para repasar cuando quieras</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Material Descargable</h4>
+                        <p>Plantillas, bloques, datasets y archivos de práctica</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Soporte Continuo</h4>
+                        <p>Asistencia técnica y resolución de dudas vía WhatsApp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructor Section -->
+    <section id="instructor" class="instructor">
+        <div class="container">
+            <h2 class="section-title">Conoce a tu Instructora</h2>
+            
+            <div class="instructor-content">
+                <div class="instructor-image">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop" alt="Ing. María Fernández Torres">
+                    <div class="instructor-badge">
+                        <i class="fas fa-award"></i>
+                        <span>Especialista en Recursos Hídricos</span>
+                    </div>
+                </div>
+                
+                <div class="instructor-info">
+                    <h3>Ing. María Fernández Torres</h3>
+                    <p class="instructor-title">Especialista en Recursos Hídricos y Modelamiento Hidráulico</p>
+                    
+                    <div class="instructor-credentials">
+                        <div class="credential">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <strong>Bachiller en Agronomía</strong>
+                                <p>Universidad Nacional Agraria La Molina (UNALM)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="credential">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <strong>+5 años de experiencia</strong>
+                                <p>En consultoría de proyectos hidráulicos y de riego</p>
+                            </div>
+                        </div>
+                        
+                        <div class="credential">
+                            <i class="fas fa-project-diagram"></i>
+                            <div>
+                                <strong>Consultora Especializada</strong>
+                                <p>Proyectos de riego, drenaje y gestión de recursos hídricos a nivel nacional</p>
+                            </div>
+                        </div>
+                        
+                        <div class="credential">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <div>
+                                <strong>Experta en Modelamiento</strong>
+                                <p>Hidráulico y SIG aplicado a ingeniería ambiental</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <blockquote class="instructor-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Mi objetivo es que domines herramientas que realmente se usan en el campo profesional. Cada sesión está diseñada para que adquieras habilidades prácticas aplicables inmediatamente en tu trabajo.</p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios Section -->
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Lo que Dicen Nuestros Estudiantes</h2>
+            <p class="section-subtitle">Historias de éxito de nuestros egresados</p>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"El curso superó mis expectativas. Los ejercicios prácticos me ayudaron a aplicarlo inmediatamente en mi trabajo. Excelente inversión para mi desarrollo profesional."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="Carlos Mendoza">
+                        <div>
+                            <h4>Carlos Mendoza</h4>
+                            <p>Ingeniero Civil</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Contenido muy bien estructurado y la instructora explica de manera clara. Las grabaciones fueron clave para repasar. Totalmente recomendado."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/150?img=47" alt="Ana Gutiérrez">
+                        <div>
+                            <h4>Ana Gutiérrez</h4>
+                            <p>Ingeniera Ambiental</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Aprendí herramientas que no enseñan en la universidad. El proyecto final me sirvió para mi portafolio profesional. Muy satisfecha con el curso."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/150?img=33" alt="Luis Ramírez">
+                        <div>
+                            <h4>Luis Ramírez</h4>
+                            <p>Agrónomo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-dots" id="sliderDots"></div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <h2 class="section-title">Inversión en tu Futuro Profesional</h2>
+            
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="price-badge">OFERTA DE LANZAMIENTO</div>
+                    <div class="price-old">S/ 250</div>
+                    <div class="price-current">S/ 150</div>
+                    <p class="price-save">¡Ahorra S/ 100!</p>
+                    <p class="price-note">Oferta válida hasta el 20 de Noviembre</p>
+                </div>
+                
+                <div class="pricing-features">
+                    <h3>El curso incluye:</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> 36 horas de capacitación certificada</li>
+                        <li><i class="fas fa-check-circle"></i> 12 sesiones en vivo vía Zoom</li>
+                        <li><i class="fas fa-check-circle"></i> Grabaciones de todas las clases</li>
+                        <li><i class="fas fa-check-circle"></i> Material descargable (plantillas CAD, bloques, datasets)</li>
+                        <li><i class="fas fa-check-circle"></i> Certificado digital por IntISMART + UNALM</li>
+                        <li><i class="fas fa-check-circle"></i> Proyecto final para portafolio</li>
+                        <li><i class="fas fa-check-circle"></i> Soporte técnico vía WhatsApp</li>
+                        <li><i class="fas fa-check-circle"></i> Acceso a comunidad de egresados</li>
+                    </ul>
+                </div>
+                
+                <div class="pricing-cta">
+                    <a href="https://wa.me/51972201556?text=Hola,%20vengo%20de%20la%20web,%20me%20gustó%20y%20quiero%20adquirir%20el%20curso" class="btn btn-large btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Reserva tu Cupo Ahora
+                    </a>
+                    <p class="seats-left"><i class="fas fa-users"></i> Solo quedan <strong id="seatsLeft">15</strong> cupos disponibles</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <p class="section-subtitle">Resuelve todas tus dudas</p>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Necesito experiencia previa en los software?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No es necesario tener experiencia previa. El curso inicia desde los fundamentos de cada software y avanza progresivamente. Solo necesitas conocimientos básicos de computación y ganas de aprender.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Qué requisitos técnicos necesito?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Necesitas una computadora con Windows (recomendado 8GB RAM), conexión a internet estable, y los software instalados (te proporcionamos guías de instalación). AutoCAD y Civil 3D ofrecen versiones de prueba gratuitas, y QGIS es software libre.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Las clases quedan grabadas?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, todas las sesiones se graban y quedan disponibles 24/7 en nuestra plataforma. Puedes repasar el contenido las veces que necesites durante la duración del curso y hasta 3 meses después de finalizado.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Entregan certificado al finalizar?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, al completar el curso y aprobar el proyecto final, recibirás un certificado digital por 36 horas académicas emitido por IntISMART con respaldo de círculos de investigación de la UNALM.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Cuál es la modalidad de pago?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Aceptamos transferencias bancarias, Yape, Plin y tarjetas de crédito/débito. También ofrecemos facilidades de pago. Contáctanos por WhatsApp para más información sobre métodos de pago.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Hay descuentos grupales?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, ofrecemos descuentos especiales para grupos de 3 o más personas. Contáctanos por WhatsApp para obtener información detallada sobre precios corporativos y grupales.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Qué pasa si no puedo asistir a una clase?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No hay problema. Como todas las clases quedan grabadas, puedes verlas en el momento que más te convenga. Además, el instructor está disponible para resolver dudas vía WhatsApp.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿El curso es válido para mi CV profesional?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutamente. El certificado tiene validez académica y el proyecto final puede agregarse directamente a tu portafolio profesional. Además, dominar estas herramientas es un requisito en muchas ofertas laborales del sector.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final Section -->
+    <section class="cta-final">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¡No Pierdas Esta Oportunidad!</h2>
+                <p>Cupos limitados - Inicio 29 de Noviembre 2025</p>
+                <a href="https://wa.me/51972201556?text=Hola,%20vengo%20de%20la%20web,%20me%20gustó%20y%20quiero%20adquirir%20el%20curso" class="btn btn-large btn-light" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Reserva tu Cupo por WhatsApp
+                </a>
+                <p class="cta-urgency"><i class="fas fa-fire"></i> Solo quedan <strong id="seatsLeftFooter">15</strong> cupos disponibles</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="https://intismart.com/wp-content/uploads/2024/03/cropped-Logo-Intismart-1.png" alt="IntISMART Logo" class="footer-logo">
+                    <p>Formamos profesionales especializados en tecnologías aplicadas a la ingeniería ambiental y recursos hídricos.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/intismart" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/intismart" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/company/intismart" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://youtube.com/@intismart" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#beneficios">Beneficios</a></li>
+                        <li><a href="#modulos">Módulos del Curso</a></li>
+                        <li><a href="#instructor">Instructor</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:contacto@intismart.com">contacto@intismart.com</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/51972201556" target="_blank">+51 972 201 556</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-globe"></i>
+                            <a href="https://intismart.com" target="_blank">www.intismart.com</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Horario de Clases</h4>
+                    <ul>
+                        <li><i class="far fa-calendar-alt"></i> Sábados y Domingos</li>
+                        <li><i class="far fa-clock"></i> 9:00 AM - 11:00 AM</li>
+                        <li><i class="fas fa-laptop"></i> Modalidad Virtual</li>
+                        <li><i class="fas fa-calendar-check"></i> Inicio: 29 Nov 2025</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 IntISMART - Todos los derechos reservados | <a href="#">Políticas de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/51972201556?text=Hola,%20vengo%20de%20la%20web,%20me%20gustó%20y%20quiero%20adquirir%20el%20curso" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Modal Popup -->
+    <div class="modal" id="promoModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-header">
+                <i class="fas fa-gift"></i>
+                <h3>¡Descuento Especial!</h3>
+            </div>
+            <div class="modal-body">
+                <p>Inscríbete hoy y ahorra <strong>S/ 100</strong> en tu inversión</p>
+                <p class="modal-price">Solo <span>S/ 150</span> en lugar de S/ 250</p>
+                <a href="https://wa.me/51972201556?text=Hola,%20vengo%20de%20la%20web,%20me%20gustó%20y%20quiero%20adquirir%20el%20curso" class="btn btn-primary" target="_blank">
+                    <i class="fab fa-whatsapp"></i> ¡Quiero Inscribirme!
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
